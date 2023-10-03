@@ -22,7 +22,7 @@ const HomePage = () => {
           key={product.id}
           style={{ border: "1px solid gray", margin: "10px", padding: "10px" }}
         >
-          <img src={product.image} alt={product.name} width={100} />
+          <img src={product.thumbnail} alt={product.name} width={100} />
           <h2>{product.name}</h2>
           <p>{product.description}</p>
           <Link href={`/product/${product.id}`}>View Product</Link>

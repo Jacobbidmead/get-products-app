@@ -24,7 +24,12 @@ const ProductPage = () => {
   return (
     <div>
       <h2>{product.name}</h2>
-      <img src={product.image} alt={product.name} width={100} height={100} />
+      <img
+        src={product.thumbnail}
+        alt={product.name}
+        width={100}
+        height={100}
+      />
       <p>{product.description}</p>
     </div>
   );
