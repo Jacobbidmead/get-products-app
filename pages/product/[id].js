@@ -23,7 +23,7 @@ const ProductPage = () => {
 
   return (
     <div>
-      <h2>{product.name}</h2>
+      <h2>{product.title}</h2>
       <img src={product.thumbnail} alt={product.name} />
       <p>{product.description}</p>
     </div>
