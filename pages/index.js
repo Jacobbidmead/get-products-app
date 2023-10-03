@@ -16,16 +16,21 @@ const HomePage = () => {
       });
   }, []);
   return (
-    <div>
-      {products.map((product) => (
-        <div key={product.id}>
-          <img src={product.thumbnail} alt={product.name} width={100} />
-          <h2>{product.name}</h2>
-          <p>{product.description}</p>
-          <Link href={`/product/${product.id}`}>View Product</Link>
+    <>
+      <div className="bg-neutral-900">
+        <h1 className="text-8xl text-center p-5 pt-8">Products</h1>
+        <div className="grid grid-cols-4 gap-5 p-10">
+          {products.map((product) => (
+            <div key={product.id}>
+              <img src={product.thumbnail} alt={product.name} width={100} />
+              <h2>{product.name}</h2>
+              <p>{product.description}</p>
+              <Link href={`/product/${product.id}`}>View Product</Link>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
+      </div>
+    </>
   );
 };
 
