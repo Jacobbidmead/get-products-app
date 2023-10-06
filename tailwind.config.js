@@ -14,6 +14,10 @@ module.exports = {
       textColor: {
         "custom-green": "rgb(221, 255, 141)",
       },
+      screens: {
+        "md-sm-nav": "1023px",
+        xs: "375px",
+      },
     },
   },
   plugins: [],

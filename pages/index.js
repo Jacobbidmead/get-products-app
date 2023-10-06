@@ -20,7 +20,7 @@ const HomePage = () => {
   return (
     <>
       <div className="bg-custom-cream">
-        <div className="grid grid-cols-4 gap-5 p-10">
+        <div className="lg:grid lg:grid-cols-4 p-10 xs:flex xs:flex-col">
           {products.map((product) => (
             <div key={product.id} className="flex justify-center flex-col">
               <div className="bg-custom-blue p-6 rounded-lg shadow-lg w-64 mx-auto mt-10">
