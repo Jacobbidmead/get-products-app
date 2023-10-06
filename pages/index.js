@@ -20,9 +20,6 @@ const HomePage = () => {
   return (
     <>
       <div className="bg-custom-cream">
-        <h1 className="text-8xl text-center  py-9  text-custom-blue">
-          Products
-        </h1>
         <div className="grid grid-cols-4 gap-5 p-10">
           {products.map((product) => (
             <div key={product.id} className="flex justify-center flex-col">
@@ -30,13 +27,13 @@ const HomePage = () => {
                 <img
                   src={product.thumbnail}
                   alt={product.name}
-                  className="w-full h-48 object-cover mb-4 rounded"
+                  className="w-full h-48 object-contain mb-4 rounded"
                 />
                 <h2 className="font-bold text-2xl mb-2">{product.name}</h2>
                 <p className="text-white">{product.description}</p>
                 <Link
                   href={`/product/${product.id}`}
-                  className="text-custom-green underline mt-4 block"
+                  className="text-custom-green mt-4 block no-underline"
                 >
                   View Product
                 </Link>
