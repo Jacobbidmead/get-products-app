@@ -19,7 +19,8 @@ const ProductPage = () => {
     }
   }, [id]);
 
-  if (!product) return <div>Loading...</div>;
+  //   if product is not found, return error
+  if (!product) return <div>Product not found</div>;
 
   return (
     <div>
