@@ -19,8 +19,8 @@ const HomePage = () => {
   }, []);
   return (
     <>
-      <div className="">
-        <h1 className="text-8xl text-center p-5 pt-8 text-green-400">
+      <div className="bg-custom-cream">
+        <h1 className="text-8xl text-center  py-9  text-custom-blue">
           Products
         </h1>
         <div className="grid grid-cols-4 gap-5 p-10">

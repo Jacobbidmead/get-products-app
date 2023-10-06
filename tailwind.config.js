@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       backgroundColor: {
         "custom-blue": "rgb(35, 38, 70)",
+        "custom-cream": "rgb(241, 243, 229)",
       },
       textColor: {
         "custom-green": "rgb(221, 255, 141)",
