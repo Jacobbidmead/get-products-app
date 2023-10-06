@@ -30,11 +30,11 @@ const ProductPage = () => {
               {" "}
               <img
                 src={product.thumbnail}
-                alt={product.name}
-                className="w-full h-64 object-contain mb-6 rounded"
+                alt={product.title}
+                className="w-full h-auto object-contain mb-6 rounded"
               />
-              <h2 className="text-2xl md:text-3xl lg:text-4xl mb-4">
-                {product.name}
+              <h2 className="text-2xl md:text-3xl lg:text-4xl mb-2 mt-2 text-custom-green">
+                {product.title}
               </h2>
               <p className="text-lg md:text-xl lg:text-2xl">
                 {product.description}

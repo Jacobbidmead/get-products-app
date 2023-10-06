@@ -20,16 +20,18 @@ const HomePage = () => {
   return (
     <>
       <div className="bg-custom-cream">
-        <div className="lg:grid lg:grid-cols-4  xs:flex xs:flex-col">
+        <div className="lg:grid lg:grid-cols-3  xs:flex xs:flex-col">
           {products.map((product) => (
             <div key={product.id} className="flex justify-center flex-col">
-              <div className="bg-custom-blue p-6 rounded-lg shadow-lg w-64 mx-auto xs:mt-10 xs:mb-10">
+              <div className="bg-custom-blue p-4 rounded-lg shadow-lg w-80 mx-auto xs:mt-10 xs:mb-10">
                 <img
                   src={product.thumbnail}
-                  alt={product.name}
-                  className="w-full h-48 object-contain mb-4 rounded"
+                  alt={product.title}
+                  className="w-full h-48 object-contain rounded"
                 />
-                <h2 className="font-bold text-2xl mb-2">{product.name}</h2>
+                <h2 className="font-bold text-2xl mb-2 mt-2 text-custom-green">
+                  {product.title}
+                </h2>
                 <p className="text-white">{product.description}</p>
                 <Link
                   href={`/product/${product.id}`}
