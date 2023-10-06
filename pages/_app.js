@@ -8,7 +8,9 @@ const DarkerGrotesque = Darker_Grotesque({
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={DarkerGrotesque.className}>
+    <main
+      className={`${DarkerGrotesque.className} min-h-screen bg-custom-cream`}
+    >
       <Component {...pageProps} />;
     </main>
   );
