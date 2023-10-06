@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const ProductPage = () => {
   const router = useRouter();
@@ -28,15 +29,20 @@ const ProductPage = () => {
         <div className="bg-custom-blue text-custom-green p-6 md:p-8 lg:p-10 rounded-lg shadow-md">
           <img
             src={product.thumbnail}
-            alt={product.description}
+            alt={product.name}
             className="w-full h-64 object-cover mb-6 rounded"
           />
           <h2 className="text-2xl md:text-3xl lg:text-4xl mb-4">
-            {product.title}
+            {product.name}
           </h2>
           <p className="text-lg md:text-xl lg:text-2xl">
             {product.description}
           </p>
+          <Link href="/">
+            <span className="mt-6 inline-block bg-custom-green text-custom-blue px-6 py-2 rounded-lg text-lg hover:bg-opacity-90">
+              Return to Products
+            </span>
+          </Link>
         </div>
       </div>
     </div>
