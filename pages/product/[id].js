@@ -19,6 +19,7 @@ const ProductPage = () => {
         });
     }
   }, [id]);
+  // Passing id in the dependency array so that we only render when id is fetched
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-custom-cream">

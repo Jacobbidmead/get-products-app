@@ -17,6 +17,7 @@ const HomePage = () => {
         console.error("Error fetching the products:", error);
       });
   }, []);
+  // dependency array, because we only want to render once
   return (
     <>
       <div className="bg-custom-cream">
