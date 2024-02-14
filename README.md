@@ -1,17 +1,9 @@
-1. Create a new nextjs project.
 
-2. Using dummy API ( https://dummyjson.com/docs/products ), fetch products and render them on the home page.
+Using dummy API ( https://dummyjson.com/docs/products ), I've fetched products and rendered them on a home page.
 
-Each product should be a card with a title, description, image and a link to its own page.
+This fetches data onto the client, it the uses next.js dynamic routes to display individual images.
 
-3. Create dynamic pages for each product.
+I created this app to practice with the fetch api & next.js.
 
-The page should fetch data only for that product using the same API
 
-It should render the same card as on the home page.
 
-You can style this in any way using your own preferred method.
-
-Send a link to GitHub with a code.
-
-Extra: send a link with the deployed version.
